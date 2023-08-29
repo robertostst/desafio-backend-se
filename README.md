@@ -7,7 +7,7 @@ Com o objetivo de facilitar esta conta, você deverá criar uma pequena aplicaç
 #### Swagger
 http://localhost:8090/api/rateio/swagger-ui.html#
 
-Imagem (captura): https://github.com/robertostst/desafio-backend-se/assets/captura_swagger.png
+![image](https://github.com/robertostst/desafio-backend-se/blob/main/assets/captura_swagger.png)
 
 
 #### URL do serviço (com parâmetro para geração de links de pagamento)
