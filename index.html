@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rateio</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="assets/normalize.css" rel="stylesheet" type="text/css">
+    <link href="assets/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="title">Rateio do Lanche</h1>
+        <form class="form" onsubmit="calcular(event, this);">
+            <h2>Dados do Pedido</h2>
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data" id="taxa_entrega" maxlength="10" name="taxa_entrega" 
+                        placeholder="Digite a taxa de entrega" type="text">
+                    <span class="form___requirement">Digite a taxa de entrega. Exemplo: 5.00</span>
+                    <input autofocus autocomplete="off" class="form___data" id="valor_desconto" maxlength="10" name="valor_desconto" 
+                        placeholder="Digite o valor do desconto" type="text">
+                    <span class="form___requirement">Digite o valor do desconto. Exemplo: 9.00</span>
+                    <input autofocus autocomplete="off" class="form___data" id="chave" maxlength="50" name="chave" 
+                        placeholder="Digite a sua chave pix" type="text">
+                    <span class="form___requirement">Digite a sua chave pix</span>
+                </div>
+            </div>
+            <br/>
+            <h2>Item 1</h2>
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data" id="descricao_1" maxlength="50" name="descricao_1" 
+                        placeholder="Digite a descrição do item" type="text">
+                    <span class="form___requirement">* Exemplo: X-burger</span>
+                    <input autofocus autocomplete="off" class="form___data" id="valor_1" maxlength="10" name="valor_1" 
+                        placeholder="Digite o valor do item" type="text">
+                    <span class="form___requirement">* Exemplo: 9.00</span>
+                    <input autofocus autocomplete="off" class="form___data" id="cliente_1" maxlength="50" name="cliente_1" 
+                        placeholder="Digite o nome do amigo" type="text">
+                    <span class="form___requirement">* Exemplo: José</span>
+                </div>
+            </div>
+            <br/>
+            <h2>Item 2</h2>
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data" id="descricao_2" maxlength="50" name="descricao_2" 
+                        placeholder="Digite a descrição do item" type="text">
+                    <span class="form___requirement">* Exemplo: X-burger</span>
+                    <input autofocus autocomplete="off" class="form___data" id="valor_2" maxlength="10" name="valor_2" 
+                        placeholder="Digite o valor do item" type="text">
+                    <span class="form___requirement">* Exemplo: 9.00</span>
+                    <input autofocus autocomplete="off" class="form___data" id="cliente_2" maxlength="50" name="cliente_2" 
+                        placeholder="Digite o nome do amigo" type="text">
+                    <span class="form___requirement">* Exemplo: José</span>
+                </div>
+            </div>
+            <br/>
+            <h2>Item 3</h2>
+            <div class="row">
+                <div class="form___group">
+                    <input autofocus autocomplete="off" class="form___data" id="descricao_3" maxlength="50" name="descricao_3" 
+                        placeholder="Digite a descrição do item" type="text">
+                    <span class="form___requirement">* Exemplo: X-burger</span>
+                    <input autofocus autocomplete="off" class="form___data" id="valor_3" maxlength="10" name="valor_3" 
+                        placeholder="Digite o valor do item" type="text">
+                    <span class="form___requirement">* Exemplo: 9.00</span>
+                    <input autofocus autocomplete="off" class="form___data" id="cliente_3" maxlength="50" name="cliente_3" 
+                        placeholder="Digite o nome do amigo" type="text">
+                    <span class="form___requirement">* Exemplo: José</span>
+                </div>
+            </div>
+            <br/>
+            <div class="row has-alignCenter">
+                <button class="form__button" type="submit">Calcular</button>
+            </div>
+        </form>
+    </main>
+    <script src="assets/index.js" type="text/javascript"></script>
+</body>
+</html>
