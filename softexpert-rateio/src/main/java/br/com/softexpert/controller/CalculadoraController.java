@@ -19,18 +19,14 @@ public class CalculadoraController implements CalculadoraAPI {
 	@Autowired
 	private CalculadoraService service;
 
-	@CrossOrigin
-	@PostMapping(value = "/ping")
-	public ResponseEntity<String> ping() {
-		return ResponseEntity.ok("101");
-	}
-
 	@Override
 	@CrossOrigin
 	@PostMapping(value = "/calculos")
-	public ResponseEntity<RateioResponse> calcular(RateioRequest request, boolean habilitarLinkPagamento) {
-		Rateio rateio = service.processarRateio(request.getPedidoParaRatearComAmigos(), request.getChave(),
-				habilitarLinkPagamento);
+	public ResponseEntity<RateioResponse> calcular(RateioRequest request, boolean gerarLinkPagamento) {
+		Rateio rateio = service.processarRateio(
+				request.getPedidoParaRateio(), 
+				request.getChave(),
+				gerarLinkPagamento);
 		RateioResponse response = RateioResponse.builder().rateio(rateio).build();
 		return ResponseEntity.ok(response);
 	}

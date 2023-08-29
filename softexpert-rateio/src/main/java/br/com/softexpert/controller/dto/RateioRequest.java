@@ -19,7 +19,7 @@ public class RateioRequest {
 	@ApiModelProperty(position = 1, notes = "Pedido que será dividido com outras pessoas", required = true)
 	@Valid
 	@NotNull
-	private Pedido pedidoParaRatearComAmigos;
+	private Pedido pedidoParaRateio;
 
 	@ApiModelProperty(position = 2, example = "robertocmfsp@gmail.com", notes = "Chave pix para receber pagamento", required = true)
 	@Valid

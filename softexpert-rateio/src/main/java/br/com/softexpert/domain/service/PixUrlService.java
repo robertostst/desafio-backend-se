@@ -37,9 +37,10 @@ public class PixUrlService {
 	@Value("${pix.sandbox.x-itau-apikey:123}")
 	private String xItauApikey;
 	
-	@Value("${pix.sandbox.x-itau-correlationID:123}")
-	private String xItauCorrelationID;
-	
+	/*
+	 * @Value("${pix.sandbox.x-itau-correlationID:123}") private String
+	 * xItauCorrelationID;
+	 */	
 	@Value("${pix.sandbox.x-sandbox-token}")
 	private String xSandboxToken;
 	
@@ -53,7 +54,7 @@ public class PixUrlService {
 			
 		List<LinkPagamento> cobrancas = new ArrayList<>();
 		
-		log.info("x-itau-apikey: {} x-itau-correlationID: {} ", xItauApikey, xItauCorrelationID);		
+		log.info("x-itau-apikey: {}", xItauApikey);		
 		
 		TokenPostRequest tokenPostRequest = TokenPostRequest.builder().clientId(clientId).clientSecret(clientSecret).build();
 		

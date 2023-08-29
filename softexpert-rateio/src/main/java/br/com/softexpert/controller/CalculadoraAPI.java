@@ -14,5 +14,5 @@ import io.swagger.annotations.Api;
 @Api(tags = SwaggerConfig.TAG_CALCULADORA)
 public interface CalculadoraAPI {
 
-	public ResponseEntity<RateioResponse> calcular(@Valid @RequestBody RateioRequest request, @RequestParam(required = false, defaultValue = "false") boolean habilitarLinkPagamento);
+	public ResponseEntity<RateioResponse> calcular(@Valid @RequestBody RateioRequest request, @RequestParam(required = false, defaultValue = "false") boolean gerarLinkPagamento);
 }
