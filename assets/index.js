@@ -1,7 +1,7 @@
 function calcular(event, form) {
     event.preventDefault();
-    const inputCep = form.cep;
-// dados a serem enviados pela solicitação POST
+
+    // dados a serem enviados pela solicitação POST
     let _data = {
         "pedidoParaRateio": {
             "itens": [
@@ -40,7 +40,6 @@ function calcular(event, form) {
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
     .then(response => response.json()) 
-    //.then(json => console.log(json))
     .then(json => mostrarResposta(json))
     .catch(err => console.log(err));
 }
@@ -59,6 +58,4 @@ function mostrarResposta(dados) {
     }
 
     alert(mensagem);
-    
-    //alert(JSON.stringify(dados));
 }
