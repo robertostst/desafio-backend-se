@@ -9,9 +9,10 @@ http://localhost:8090/api/rateio/swagger-ui.html#
 
 ![image](https://github.com/robertostst/desafio-backend-se/blob/main/assets/captura_swagger.png)
 
-
 #### URL do serviço (com parâmetro para geração de links de pagamento)
+```
 POST localhost:8090/api/rateio/calculos?gerarLinkPagamento=true
+```
 
 #### JSON de Entrada (exemplo)
 ```
@@ -78,5 +79,5 @@ POST localhost:8090/api/rateio/calculos?gerarLinkPagamento=true
 }
 ```
 
-#### Foi utilizada a API do Banco Itaú para gerar o link de pagamento
+#### Foi utilizada a API do Banco Itaú para gerar o link de pagamento via Pix
 https://devportal.itau.com.br/nossas-apis/itau-ep9-gtw-pix-recebimentos-conciliacoes-v2-ext#operation/post/cobrancas_imediata_pix
