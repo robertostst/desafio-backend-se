@@ -4,6 +4,9 @@ A ideia deste desafio é resolver um problema comum no dia-a-dia de quem divide 
 
 Com o objetivo de facilitar esta conta, você deverá criar uma pequena aplicação que irá calcular o total que seus amigos deverão lhe pagar quando dividirem um almoço. Ao final, você deverá simplificar o pagamento gerando um link do Picpay (ou outra carteira de sua preferência), para enviar a cobrança a seus amigos. 
 
+#### Frontend (está na raiz do repositório)
+index.html
+
 #### Swagger
 http://localhost:8090/api/rateio/swagger-ui.html#
 
